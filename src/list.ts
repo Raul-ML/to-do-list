@@ -102,6 +102,9 @@ class ComponentList extends HTMLElement{
         let n=-1
         this.shadow.innerHTML= `
             <style>
+                *{
+                    box-sizing: border-box;
+                    }
                 div.postit{
                     margin:0;
                     padding:0;
@@ -111,7 +114,8 @@ class ComponentList extends HTMLElement{
                     border: solid black 2px;
                     border-radius:15px;
                     display: flex;
-                    justify-content: space-between;                    
+                    justify-content: space-between;     
+                                   
                     }
                 div.postit-text{
                     width:70%;
@@ -128,6 +132,20 @@ class ComponentList extends HTMLElement{
                     justify-content: center;                                        
                     
                 }
+                div.checked{
+                    background-color:grey;
+                    text-decoration: line-through;
+                    box-sizing: border-box;
+                    border-radius:15px;
+                }
+                div.selected{
+                    border: solid black 5px;
+                }
+                div.notselected{
+                    border: solid black 2px;
+                    box-sizing: border-box;
+                }
+
                 div.postit-check-delete{
                     display:flex;
                     flex-direction:column;
@@ -141,17 +159,8 @@ class ComponentList extends HTMLElement{
                     width:20px;
                     height:20px;
                     margin:0;
-                }
-                div.checked{
-                    background-color:grey;
-                    text-decoration: line-through;
-                }
-                div.selected{
-                    border: solid black 5px;
-                }
-                div.notselected{
-                    border: solid black 2px;
-                }
+                    z-index:1000;
+                    }
                 img.notselected{
                     visibility:hidden;
                 }
