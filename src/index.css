@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./wall.jpg');
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: repeat; 
+}
+
+.todo-list{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+my-list{
+    min-height: 500px;
+    border-radius: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
