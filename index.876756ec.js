@@ -1,4 +1,4 @@
-var e=globalThis,t={},i={},s=e.parcelRequire94c2;null==s&&((s=function(e){if(e in t)return t[e].exports;if(e in i){var s=i[e];delete i[e];var o={id:e,exports:{}};return t[e]=o,s.call(o.exports,o,o.exports),o.exports}var r=Error("Cannot find module '"+e+"'");throw r.code="MODULE_NOT_FOUND",r}).register=function(e,t){i[e]=t},e.parcelRequire94c2=s),(0,s.register)("27Lyk",function(e,t){Object.defineProperty(e.exports,"register",{get:()=>i,set:e=>i=e,enumerable:!0,configurable:!0});var i,s=new Map;i=function(e,t){for(var i=0;i<t.length-1;i+=2)s.set(t[i],{baseUrl:e,path:t[i+1]})}}),s("27Lyk").register(new URL("",import.meta.url).toString(),JSON.parse('["dZpbI","index.cb7188b1.js","70bT3","wall.133e2c4a.jpg","5SW54","del_img.36c7340d.png"]'));const o={data:{list:[]},listeners:[],getState(){return this.data},setState(e){for(let t of(this.data=e,this.listeners))t();console.log("Soy el state, he cambiado ",this.data),console.log(document.querySelector("my-list"))},subscribe(e){this.listeners.push(e)},addItem(e){let t=this.getState();t.list.push([e,"pending","notselected"]),this.setState(t)}};new URL("wall.133e2c4a.jpg",import.meta.url).toString();class r extends HTMLElement{constructor(){super(),this.shadow=this.attachShadow({mode:"open"}),this.render()}connectedCallback(){let e=this.shadow.querySelector(".form");e?.addEventListener("submit",e=>{e.preventDefault(),e.stopPropagation();let t=e.target.querySelector("input");o.addItem(t.value)})}render(){this.shadow.innerHTML=`
+var e=globalThis,t={},i={},s=e.parcelRequire94c2;null==s&&((s=function(e){if(e in t)return t[e].exports;if(e in i){var s=i[e];delete i[e];var o={id:e,exports:{}};return t[e]=o,s.call(o.exports,o,o.exports),o.exports}var r=Error("Cannot find module '"+e+"'");throw r.code="MODULE_NOT_FOUND",r}).register=function(e,t){i[e]=t},e.parcelRequire94c2=s),(0,s.register)("27Lyk",function(e,t){Object.defineProperty(e.exports,"register",{get:()=>i,set:e=>i=e,enumerable:!0,configurable:!0});var i,s=new Map;i=function(e,t){for(var i=0;i<t.length-1;i+=2)s.set(t[i],{baseUrl:e,path:t[i+1]})}}),s("27Lyk").register(new URL("",import.meta.url).toString(),JSON.parse('["dZpbI","index.876756ec.js","70bT3","wall.133e2c4a.jpg","5SW54","del_img.36c7340d.png"]'));const o={data:{list:[]},listeners:[],getState(){return this.data},setState(e){for(let t of(this.data=e,this.listeners))t();console.log("Soy el state, he cambiado ",this.data),console.log(document.querySelector("my-list"))},subscribe(e){this.listeners.push(e)},addItem(e){let t=this.getState();t.list.push([e,"pending","notselected"]),this.setState(t)}};new URL("wall.133e2c4a.jpg",import.meta.url).toString();class r extends HTMLElement{constructor(){super(),this.shadow=this.attachShadow({mode:"open"}),this.render()}connectedCallback(){let e=this.shadow.querySelector(".form");e?.addEventListener("submit",e=>{e.preventDefault(),e.stopPropagation();let t=e.target.querySelector("input");o.addItem(t.value)})}render(){this.shadow.innerHTML=`
             <style>
                 form {
                     width:100%;
@@ -85,6 +85,7 @@ var e=globalThis,t={},i={},s=e.parcelRequire94c2;null==s&&((s=function(e){if(e i
                 div.checked{
                     background-color:grey;
                     text-decoration: line-through;
+                    border-radius:15px
                 }
                 div.selected{
                     border: solid black 5px;
@@ -110,4 +111,4 @@ var e=globalThis,t={},i={},s=e.parcelRequire94c2;null==s&&((s=function(e){if(e i
                     </div>
                 </div>
                             `}).join("")}`}}customElements.define("my-list",d);
-//# sourceMappingURL=index.cb7188b1.js.map
+//# sourceMappingURL=index.876756ec.js.map
